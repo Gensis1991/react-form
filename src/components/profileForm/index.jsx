@@ -17,24 +17,24 @@ export default function Profile() {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label>First Name</label>
-        <input type="text" {...register('firstName')} />
+        <input type="text" placeholder='Nombres'{...register('firstName')} />
         {errors.firstName && <p>{errors.firstName.message}</p>}
       </div>
       <div style={{ marginBottom: 10 }}>
-        <label>Last Name</label>
-        <input type="text" {...register('lastName')} />
+        <input type="text" placeholder='Apellidos'{...register('lastName')} />
         {errors.lastName && <p>{errors.lastName.message}</p>}
       </div>
       <div>
-        <label>Age</label>
-        <input type="text" {...register('age')} />
-        {errors.age && <p>{errors.age.message}</p>}
+        <input type="text" placeholder='Correo Electrónico Corporativo'{...register('email')} />
+        {errors.email && <p>{errors.email.message}</p>}
       </div>
       <div>
-        <label>Website</label>
-        <input type="text" {...register('website')} />
-        {errors.website && <p>{errors.website.message}</p>}
+        <input type="password" placeholder='Ingresa una contraseña'{...register('password')} />
+        {errors.password && <p>{errors.password.message}</p>}
+      </div>
+      <div>
+        <input type="password" placeholder='Confirma la contraseña'{...register('password')} />
+        {errors.password && <p>{errors.password.message}</p>}
       </div>
 
       <input type="submit" />
