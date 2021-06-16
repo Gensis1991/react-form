@@ -33,12 +33,13 @@ export default function Register() {
         <h2 className='forgetPasswd'>¿Olvidaste tu contraseña?</h2>
       </div>
 
-      <input type="submit" />
+      <input type='submit' value='Iniciar sesión' />
 
       <div>
         <h2 className='notAccount'>¿Todavía no tienes cuenta?</h2>
       </div>
 
+      <input type='submit' value='Regístrate aquí' />
       
     </form>
   )
